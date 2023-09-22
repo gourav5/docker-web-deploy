@@ -1,6 +1,7 @@
 web:
   image: nginx
-  COPY index.html:/var/www/html
+  volumes:
+  - index.html:/var/www/html
   ports:
    - "3000:80"
   container_name: API_web
