@@ -1,7 +1,7 @@
 web:
   image: nginx
   volumes:
-  - index.html:/var/www/html
+  - /var/lib/jenkins/workspace/Docker-Web-Deploy/index.html:/var/www/html
   ports:
    - "3000:80"
   container_name: API_web
