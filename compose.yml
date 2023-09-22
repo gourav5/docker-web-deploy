@@ -4,7 +4,7 @@ web:
     - /var/www/html:/var/www/html
   ports:
    - "8070:80"
-  container_name: Nginx_web
+  container_name: API_web
   environment:
    - NGINX_HOST=foobar.com
    - NGINX_PORT=80
